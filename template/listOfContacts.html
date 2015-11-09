@@ -1,0 +1,65 @@
+
+<div class="greenHead">
+    <div class="menu"></div>
+    <div class="logo"></div>
+    <div class="grHName">Howdy, <b>Aaron</b></div>
+    <div class="grHPhoto"></div>
+</div>
+
+
+<div class="blackHead">
+    <div class="quantityOfContacts headForContacts">{{contacts.length}}</div>
+    <div class="headForContacts">Contacts</div>
+    <div class="addContact" ng-click="createContact()"></div>
+
+    <div class="listOfContacts">
+
+        <div class="headOfListOfContacts">
+            <div class="name">NAME</div
+            ><div class="birthday">BIRTHDAY</div
+            ><div class="phoneNumber">PHONE NUMBER</div
+            ><div class="actionsWithContacts">
+                <div name="checkAll" ng-click="selectAllContacts($event)"></div
+                ><div name="deleteContacts" ng-click="deleteAllContacts()"></div>
+            </div
+        ></div>
+
+
+        <div class="contact" name="contact" ng-repeat="contact in contacts">
+            <div class="checkPhoto">
+                <div class="checkbox" name="checkbox" ng-click="clickCheckbox($event)"></div
+               ><div class="contactPhoto"></div
+           ></div
+           ><div class="contactNameEmail">
+                <div class="contactName"> {{contact.contactName}} </div
+               ><div class="contactEmail"> {{contact.contactEmail}} </div
+          ></div
+          ><div class="contactBirthday">
+                <div class="birthdayTitle">Birthday</div>
+                {{contact.contactBirthday}}
+          </div
+          ><div class="contactPhoneNumber">
+                <div class="phoneTitle">Phone Number</div>
+                {{contact.contactPhoneNumber}}
+          </div
+          ><div class="actionsWithContact">
+                <div class="editContact" ng-click="editContact($event)"></div
+               ><div class="deleteContact" ng-click="deleteContact($event)"></div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="home leftPartOfFooter">Home</div>
+    <div class="company leftPartOfFooter">Company</div>
+    <div class="portfolio leftPartOfFooter">Portfolio</div>
+    <div class="blog leftPartOfFooter">Blog</div>
+    <div class=" rightBlockOfFooter">
+        <img class="facebook rightPartOfFooter" width="20 px" height="20 px" src="images/Fb.svg">
+        <img class="twitter rightPartOfFooter" width="20 px" height="20 px" src="images/Tw.svg">
+        <img class="google rightPartOfFooter" width="20 px" height="20 px" src="images/Gplus.svg">
+    </div>
+</div>

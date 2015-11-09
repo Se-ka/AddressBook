@@ -1,0 +1,36 @@
+
+
+<!--add new contact ////////////////////////////////////////////////////////////////-->
+<div class="dimmer"></div>
+<div class="formOfNewContact">
+    <div class="addNewContactTitle">
+        Add New Contact
+    </div>
+    <div class="close" ng-click="closeThisDialog()"></div>
+    <div class="blockForAddPhoto">
+        <div class="addPhoto"></div>
+    </div>
+    <div class="contactData">
+        <div class="title"> Add New Contact</div>
+        <div class="nameContact">
+            <div class="marginTop5">NAME</div>
+            <input type="text" class="marginTop5" value="{{contact.contactName}}" name="contactName" placeholder="Paul Weber">
+        </div>
+        <div class="email">
+            <div class="marginTop5">EMAIL</div>
+            <input type="text" class="marginTop5" value="{{contact.contactEmail}}" name="contactEmail" placeholder="paul.weber@gmail.com">
+        </div>
+        <div class="birthdayContact">
+            <div class="marginTop5">BIRTHDAY</div>
+            <input type="text" class="marginTop5" value="{{contact.contactBirthday}}" name="contactBirthday" placeholder="12/12/1989">
+        </div>
+        <div class="phone">
+            <div class="marginTop5">PHONE NUMBER</div>
+            <input type="text" class="marginTop5"  value="{{contact.contactPhoneNumber}}" name="contactPhoneNumber" placeholder="202-555-0182">
+        </div>
+        <div class="buttons">
+            <div class="cancel" ng-click="closeThisDialog()">Cancel</div>
+            <div class="save" ng-click="save()">Save</div>
+        </div>
+    </div>
+</div>
