@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: small;
+    position: relative;
+}
+
+.greenHead {
+    width: 100%;
+    height: 55px;
+    background-color: #44cc77;
+}
+
+.menu {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/Menu.svg);
+    margin-top: 10px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 37px;
+    height: 37px;
+    background-image: url(../images/Logo.png);
+    cursor: pointer;
+    margin-left: -26px;
+}
+
+.grHName {
+    display: inline-block;
+    position: absolute;
+    right: 52px;
+    top: 20px;
+}
+
+.grHPhoto {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/user.png);
+    cursor: pointer;
+}
+
+
+.blackHead {
+    width: 100%;
+    height: 140px;
+    background-color: #333844;
+    position: relative;
+    padding-top: 30px;
+}
+
+.headForContacts {
+    color: #FFFFFF;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.quantityOfContacts {
+    margin-left: 9%;
+    margin-top: 10px;
+}
+
+.addContact {
+    position: absolute;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/addContact.png);
+    right: 9%;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.listOfContacts {
+    position: absolute;
+    border: 1px solid #DFDFDF;
+    border-radius: 5px;
+    width: 1000px;
+    background-color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: 29px;
+    margin-bottom: 55px;
+}
+
+.headOfListOfContacts {
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.headOfListOfContacts > div {
+    margin-top: 20px;
+    text-align: center;
+    color: #9A9A9A;
+}
+
+.name {
+    display: inline-block;
+    width: 50.06%;
+    margin-top: 20px;
+}
+
+.birthday {
+    display: inline-block;
+    width: 17.17%;
+}
+
+.phoneNumber {
+    display: inline-block;
+    width: 22.22%;
+}
+
+.actionsWithContacts {
+    display: inline-block;
+    width: 10.1%;
+}
+
+/*/////////////////////////////////////////////////////////////*/
+
+.contactOfListOfContacts {
+    width: 100%;
+    height: 75px;
+}
+.contactOfListOfContacts.even {
+	background-color: #F8F8F8;
+}
+
+.contactOfListOfContacts > div {
+    display: inline-block;
+    float: left;
+}
+
+.checkPhoto {
+    width: 18%;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    margin-left: 20%;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/checkbox.png);
+    float: left;
+    margin-top: 15%;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    background-image: url(../images/checkbox_hover.png);
+}
+
+.contactPhoto {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/photo.png);
+    margin-top: 7%;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.contactNameEmail{
+    width: 38%;
+    margin-top: 22px;
+}
+
+.contactEmail {
+    color: #9A9A9A;
+}
+
+.contactBirthday {
+    width: 17.1%;
+    margin-top: 3%;
+}
+
+.birthdayTitle {
+	display: none;
+}
+
+.contactPhoneNumber {
+    width: 17%;
+    margin-top: 3%;
+}
+
+.phoneTitle {
+	display: none;
+}
+
+
+.editContact {
+    display: inline-block;
+    position: relative;
+    width: 23px;
+    height: 22px;
+    background-image: url(../images/edit.png);
+    float: left;
+    margin-top: 40%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.editContact:hover {
+    background-image: url(../images/edit_hover.png);
+}
+
+.deleteContact {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/delete.png);
+    float: left;
+    margin-top: 40%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.deleteContact:hover {
+    background-image: url(../images/delete_hover.png);
+}
+
+    /*//////////////////////////////////////////////////////////////////*/
+
+.footer {
+    background: #333844;
+    height: 52px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .leftPartOfFooter {
+    display: inline-block;
+    color: #999aaa;
+    margin-left: 10px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.footer .rightBlockOfFooter {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    margin-top: 17px;
+}
+
+.footer .rightBlockOfFooter .rightPartOfFooter {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
+
+/* - add contact //////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+.dimmer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    opacity: 0.9;
+    background-color: black;
+}
+
+.close {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/close.png);
+    position: absolute;
+    left: 663px;
+    top: -22px;
+    cursor: pointer;
+}
+
+.formOfNewContact {
+    width: 662px;
+    height: 440px;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -330px;
+    margin-top: -218px;
+    z-index: 1002;
+}
+
+.blockForAddPhoto {
+    display: inline-block;
+    width: 330px;
+    height: 436px;
+    background-color: #44CC77;
+    border: 1px solid #44CC77;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    position: relative;
+}
+
+.addPhoto {
+    width: 172px;
+    height: 172px;
+    background-image: url(../images/addPhoto.png);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -86px;
+    margin-top: -86px;
+    cursor: pointer;
+}
+
+.contactData {
+    display: inline-block;
+    width: 328px;
+    height: 436px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 0 5px 5px 0;
+}
+
+.contactData > div {
+    width: 93%;
+    height: 62px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+input {
+    width: 265px;
+    border: none;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 72px;
+}
+.nameContact {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.email {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.birthdayContact {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.phone {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.marginTop5 {
+    margin-top: 7px;
+}
+
+div.buttons {
+    width: 100%;
+    height: 62px;
+    padding: 0;
+}
+
+.buttons > div {
+    display: inline-block;
+    width: 73px;
+    height: 25px;
+    padding-top: 8px;
+    margin-top: 20px;
+
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cancel {
+    color: #A5A5A5;
+    margin-left: 157px;
+}
+
+.save {
+    color: white;
+    background-color: #44cc77;
+    border-radius: 5px;
+}
+
+
+
+/*  mobile version ///////////////////////////////////////////////////////////////////////////////*/
+
+
+
+@media (max-width: 400px) {
+
+	/* List of Contacts: begin */
+
+    .grHName {
+        display: none;
+    }
+
+    .blackHead {
+        height: 76px;
+    }
+
+    .listOfContacts {
+        position: static;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        margin-left: 0;
+        margin-top: 32px;
+	    margin-bottom: 90px;
+    }
+
+    .headOfListOfContacts {
+        display: none;
+    }
+
+	.checkPhoto {
+		left: 0;
+		top: 0;
+		position: absolute;
+		width: 73px;
+		height: 73px;
+	}
+
+    .checkbox {
+	    display: none;
+    }
+
+	.contactOfListOfContacts {
+		height: auto;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		padding-left: 80px;
+		position: relative;
+		min-height: 40px;
+		font-size: 14px;
+		width: calc(100% - 80px);
+	}
+
+	.contactOfListOfContacts > div {
+		float: none;
+	}
+
+	.contactPhoto {
+		position: static;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	div.contactNameEmail {
+		width: 270px;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	div.contactEmail {
+		color: #9A9A9A;
+	}
+
+	div.contactBirthday {
+		width: 140px;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	.birthdayTitle {
+		display: block;
+		text-transform: uppercase;
+		color: #9A9A9A;
+	}
+
+	div.contactPhoneNumber {
+		width: 140px;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	.phoneTitle {
+		display: block;
+		text-transform: uppercase;
+		color: #9A9A9A;
+	}
+
+	div.actionsWithContact {
+		width: 150px;
+		margin-top: 0;
+	}
+
+	.editContact {
+		position: static;
+		float: none;
+		margin: 0;
+	}
+
+    .deleteContact {
+	    position: static;
+	    float: none;
+	    margin:  0 0 0 20px;
+    }
+
+	/* List of Contacts: end */
+
+    /* Add New Contact Dialog: begin */
+
+    .dimmer {
+        display: none;
+    }
+
+    .formOfNewContact {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        background-color: white;
+    }
+
+    .addNewContactTitle {
+        display: block;
+        height: 35px;
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .close {
+        left: 20px;
+        top: 15px;
+    }
+
+    .blockForAddPhoto {
+        width: 100%;
+        height: 150px;
+    }
+
+    .addPhoto {
+        width: 88px;
+        height: 88px;
+        margin-left: -44px;
+        margin-top: -44px;
+        background-image: url(../images/addPhoto_88.png);
+    }
+
+    .contactData {
+        width: 100%;
+    }
+
+    .title {
+        display: none;
+    }
+
+    div.cancel {
+        display: none;
+    }
+
+    div.save {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    /* Add New Contact Dialog: end */
+
+	/* Footer goes next */
+
+	.footer {
+		text-align: center;
+		height: 90px;
+	}
+	.footer .leftPartOfFooter {
+		font-size: 14px;
+	}
+
+	.footer .rightBlockOfFooter {
+		position: static;
+		display: block;
+        right: auto;
+        margin-top: 17px;
+	}
+}
