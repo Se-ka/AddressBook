@@ -88,13 +88,6 @@ addressBook.controller('listOfContacts',
         $scope.num = 0;
         $scope.save = function () {
 
-            var contact = {
-                contactName: $('[name=contactName]').val(),
-                contactEmail: $('[name=contactEmail]').val(),
-                contactBirthday: $('[name=contactBirthday]').val(),
-                contactPhoneNumber: $('[name=contactPhoneNumber]').val()
-            };
-
             var contacts = localStorage.getItem('contacts');
 
             if (contacts === null) {
@@ -105,11 +98,11 @@ addressBook.controller('listOfContacts',
             var contactsArray = JSON.parse(contactsStr);
 
             if ($scope.flag === -1) {
-                contactsArray.push(contact);
+                contactsArray.push($scope.contact);
                 $scope.contacts = contactsArray;
             } else {
-                $scope.contacts[$scope.indexOfContact] = contact;
-                contactsArray[$scope.indexOfContact] = contact;
+                $scope.contacts[$scope.indexOfContact] = $scope.contact;
+                contactsArray[$scope.indexOfContact] = $scope.contact;
             }
 
             localStorage.setItem('contacts', JSON.stringify(contactsArray));
