@@ -42,12 +42,6 @@
   box-sizing: border-box;
 }
 
-/*.ngdialog *,*/
-/*.ngdialog *:before,*/
-/*.ngdialog *:after {*/
-  /*box-sizing: inherit;*/
-/*}*/
-
 .ngdialog {
   position: fixed;
   overflow: auto;
@@ -65,18 +59,6 @@
   -webkit-animation: none!important;
   animation: none!important;
 }
-
-/*.ngdialog-overlay {*/
-  /*position: fixed;*/
-  /*background: rgba(0, 0, 0, 0.4);*/
-  /*top: 0;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*-webkit-backface-visibility: hidden;*/
-  /*-webkit-animation: ngdialog-fadein 0.5s;*/
-  /*animation: ngdialog-fadein 0.5s;*/
-/*}*/
 
 .ngdialog-no-overlay {
   pointer-events: none;
@@ -102,13 +84,3 @@
   animation: ngdialog-fadeout 0.5s;
 }
 
-/*.ngdialog-close:before {*/
-  /*font-family: 'Helvetica', Arial, sans-serif;*/
-  /*content: '\00D7';*/
-  /*cursor: pointer;*/
-/*}*/
-
-/*html.ngdialog-open,*/
-/*body.ngdialog-open {*/
-  /*overflow: hidden;*/
-/*}*/

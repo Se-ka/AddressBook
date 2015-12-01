@@ -14,7 +14,8 @@
         <div class="title"> Add New Contact</div>
         <div class="nameContact">
             <div class="marginTop5">NAME</div>
-            <input type="text" class="marginTop5" ng-model="contact.contactName" name="contactName" placeholder="Paul Weber">
+            <span class="marginTop5" ng-bind="contact.contactName"></span>
+            <button class="marginTop5" ng-click="openDialogForMoreInfo()">Change Name</button>
         </div>
         <div class="email">
             <div class="marginTop5">EMAIL</div>
@@ -29,7 +30,7 @@
             <input type="text" class="marginTop5"  ng-model="contact.contactPhoneNumber" name="contactPhoneNumber" placeholder="202-555-0182">
         </div>
         <div class="buttons">
-            <div class="cancel" ng-click="closeThisDialog()">Cancel</div>
+            <div class="cancel" ng-click="closeLastOpenedDialog()">Cancel</div>
             <div class="save" ng-click="save()">Save</div>
         </div>
     </div>

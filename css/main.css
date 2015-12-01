@@ -408,7 +408,7 @@ input[type="checkbox"] {
     border-radius: 0 5px 5px 0;
 }
 
-.contactData > div {
+    .contactData > div {
     width: 93%;
     height: 62px;
     padding-left: 20px;
@@ -453,7 +453,7 @@ div.buttons {
 
 .buttons > div {
     display: inline-block;
-    width: 73px;
+    width: 95px;
     height: 25px;
     padding-top: 8px;
     margin-top: 20px;
@@ -465,7 +465,7 @@ div.buttons {
 
 .cancel {
     color: #A5A5A5;
-    margin-left: 157px;
+    margin-left: 115px;
 }
 
 .save {
@@ -474,7 +474,42 @@ div.buttons {
     border-radius: 5px;
 }
 
+button {
+    width: 95px;
+    height: 25px;
+}
 
+
+/* for form for add more info =======================================================================*/
+
+.formForAddMoreInfo {
+    width: 662px;
+    height: 440px;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -165px;
+    margin-top: -218px;
+    z-index: 1002;
+}
+
+.formForAddMoreInfo .contactData {
+    display: inline-block;
+    width: 328px;
+    height: 436px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+
+.ok {
+    color: white;
+    background-color: #44cc77;
+    border-radius: 5px;
+    margin-left: 110px;
+}
 
 /*  mobile version ///////////////////////////////////////////////////////////////////////////////*/
 

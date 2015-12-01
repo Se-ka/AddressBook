@@ -19,7 +19,7 @@ addressBook.config(['$routeProvider',
 addressBook.controller('listOfContacts',
     function ($scope, ngDialog) {
 
-        window.z = $scope;
+        $scope.openedDialogs = [];
 
         var contactsArray = localStorage.getItem('contacts');
         $scope.contacts = JSON.parse(contactsArray);
@@ -47,10 +47,11 @@ addressBook.controller('listOfContacts',
 
 
         $scope.openDialog = function () {
-            ngDialog.open({
-                template: ' template/addNewContact.html',
+            var dialog = ngDialog.open({
+                template: 'template/addNewContact.html',
                 scope: $scope
             });
+            $scope.openedDialogs.push(dialog);
         };
 
 
@@ -84,6 +85,22 @@ addressBook.controller('listOfContacts',
         };
 
 
+        $scope.openDialogForMoreInfo = function () {
+            var dialog = ngDialog.open({
+                template: 'template/addMoreInfo.html',
+                scope: $scope
+            });
+
+            $scope.openedDialogs.push(dialog);
+        };
+
+
+        $scope.closeLastOpenedDialog = function () {
+            var lastOpenedDialog = $scope.openedDialogs.pop();
+            lastOpenedDialog.close();
+        };
+
+
 
         $scope.num = 0;
         $scope.save = function () {
@@ -109,7 +126,7 @@ addressBook.controller('listOfContacts',
 
             $scope.flag = 0;
 
-            ngDialog.close();
+            $scope.closeLastOpenedDialog();
 
             buttonsForDeleteAllContacts();
         };
@@ -117,7 +134,6 @@ addressBook.controller('listOfContacts',
 
 
         $scope.selectAllContacts = function (eventClick) {
-
             var $eventClick = $(eventClick.target);
             var checkbox = $('[name=checkbox]');
             if ($eventClick.hasClass('checkAll')) {
@@ -136,9 +152,7 @@ addressBook.controller('listOfContacts',
         };
 
 
-
         $scope.deleteContact = function (eventClick) {
-
             var contactIndex = $(eventClick.target).parent().parent().index();
             var indexOfContact = contactIndex-1;
             var contactsStr = localStorage.getItem('contacts');
